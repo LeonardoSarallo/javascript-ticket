@@ -11,12 +11,12 @@ document.getElementById('travel_cost').innerHTML = 'Il prezzo del biglietto è d
 //sconti
 if (age < 18) {
   var juniordiscount = price - (price * 0.2);
-  var juniordiscount = Math.round(original*100)/100;
+  juniordiscount = Math.round(juniordiscount*100)/100;
   document.getElementById('travel_cost').innerHTML = 'Il prezzo del biglietto scontato del 20% è di € ' + juniordiscount;
 
 }
 if (age >= 65) {
   var seniordiscount = price - (price * 0.40);
-  var seniordiscount = Math.round(original*100)/100;
+  seniordiscount = Math.round(seniordiscount*100)/100;
   document.getElementById('travel_cost').innerHTML = 'Il prezzo del biglietto scontato del 40% è di € ' + seniordiscount;
 }
